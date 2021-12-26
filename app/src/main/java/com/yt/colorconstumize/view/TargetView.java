@@ -129,7 +129,6 @@ public class TargetView extends View {
     private void init() {
         sp = getContext().getSharedPreferences("colors", Context.MODE_PRIVATE);
         targetPaint = new Paint();
-        System.out.println(color1+"-----------------");
         loadColor();
     }
 
