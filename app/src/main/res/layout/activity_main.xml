@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <com.yt.colorconstumize.view.TargetView
+            android:id="@+id/tv_target_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:id="@+id/ll_color_picker"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_target_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="靶子主颜色"/>
+            <Button
+                android:id="@+id/btn_target_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="靶子副颜色"/>
+
+            <SeekBar
+                android:id="@+id/sb_r"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="255"
+                android:progressTint="#F00"
+                android:thumbTint="#F00"/>
+            <SeekBar
+                android:id="@+id/sb_g"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="255"
+                android:progressTint="#0F0"
+                android:thumbTint="#0F0"/>
+            <SeekBar
+                android:id="@+id/sb_b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="255"
+                android:progressTint="#00F"
+                android:thumbTint="#00F"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
